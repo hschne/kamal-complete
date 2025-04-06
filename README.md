@@ -14,24 +14,25 @@ Kamal provides many commands and options, and shell completions help you find th
 
 ### Manual
 
+Download ZSH completions to some location on your `fpath`. For example:
+
 ```
 curl -O https://github.com/hschne/kamal-complete/blob/main/completions/kamal.zsh > /usr/share/zsh/site-functions/_kamal
 ```
 
-### [Zinit](https://github.com/zdharma-continuum/zinit))
+### [Zinit](https://github.com/zdharma-continuum/zinit)
 
 ```zsh
 zi ice lucid wait as'completion' blockf has'kamal' mv'kamal.zsh -> _kamal'
 zi snippet https://github.com/hschne/kamal-complete/blob/main/completions/kamal.zsh
-````
+```
 
 ### [ZI](https://wiki.zshell.dev/)
 
 ```zsh
 zi ice lucid wait as'completion' blockf has'kamal' mv'kamal.zsh -> _kamal'
 zi snippet https://github.com/hschne/kamal-complete/blob/main/completions/kamal.zsh
-````
-
+```
 
 ## Contributing
 
