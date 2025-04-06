@@ -16,8 +16,8 @@ Kamal provides many commands and options, and shell completions help you find th
 
 Download ZSH completions to some location on your `fpath`. For example:
 
-```
-curl -O https://github.com/hschne/kamal-complete/blob/main/completions/kamal.zsh > /usr/share/zsh/site-functions/_kamal
+```bash
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal-complete/refs/heads/main/completions/kamal.zsh > out.zsh
 ```
 
 ### [Zinit](https://github.com/zdharma-continuum/zinit)
