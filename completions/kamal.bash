@@ -7,6 +7,15 @@
 #
 # ------------------------------------------------------------------------------
 
+_init_completion() {
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  prev="${COMP_WORDS[COMP_CWORD - 1]}"
+  words=("${COMP_WORDS[@]}")
+  cword="${COMP_CWORD}"
+  return 0
+}
+
 # Helper function to generate completions for common options
 _kamal_common_options() {
   local opts=(
@@ -26,7 +35,7 @@ _kamal_common_options() {
 # Main completion function
 _kamal_complete() {
   local cur prev words cword
-  _init_completion || return
+  _init_completion
 
   # Top-level commands
   local commands=(
