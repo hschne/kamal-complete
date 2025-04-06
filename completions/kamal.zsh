@@ -43,6 +43,7 @@ _kamal_handle_subcommands() {
       ;;
   esac
 }
+
 _kamal() {
   local context state state_descr line curcontext="$curcontext"
   typeset -A opt_args
@@ -531,4 +532,3 @@ _kamal_server() {
 }
 
 _kamal "$@"
-
