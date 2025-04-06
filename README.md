@@ -12,15 +12,30 @@ Kamal provides many commands and options, and shell completions help you find th
 
 ## Installation
 
-### Manual
+### Bash
 
-Download ZSH completions to some location on your `fpath`. For example:
+Download the bash completions and source them in your `.bashrc`. For example:
 
 ```bash
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal-complete/refs/heads/main/completions/kamal.zsh > out.zsh
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal-complete/refs/heads/main/completions/kamal.bash > ~/.local/share/bash-completion/kamal-completion.bash
+echo 'source "$HOME/.local/share/bash-completion/kamal-completion.bash"' >> $HOME/.bashrc
 ```
 
-### [Zinit](https://github.com/zdharma-continuum/zinit)
+### ZSH
+
+#### Manual
+
+Download ZSH completions as `_kamal` to some location on your `fpath`. For example:
+
+```bash
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal-complete/refs/heads/main/completions/kamal.zsh > ~/.local/share/zsh-completion/_kamal
+```
+
+#### Plugin Managers
+
+You can download and manage Kamal completions for ZSH using various plugin managers.
+
+#### [Zinit](https://github.com/zdharma-continuum/zinit)
 
 ```zsh
 zi ice lucid wait as'completion' blockf has'kamal' mv'kamal.zsh -> _kamal'
