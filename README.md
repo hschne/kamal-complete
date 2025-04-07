@@ -2,11 +2,11 @@
 
 # Kamal Complete
 
-### Complete shell completions for [Kamal](https://kamal-deploy.org/) 💎
+### Complete shell completions for Kamal ⌨️
 
 https://github.com/user-attachments/assets/bc746bb9-cbcb-4567-b42a-49808d889641
 
-Kamal provides many commands and options, and shell completions help you find the right ones.
+ [Kamal](https://kamal-deploy.org/) provides many commands and options, and shell completions help you find the right ones.
 
 </div>
 
@@ -57,6 +57,6 @@ We welcome all support, whether on bug reports, code, design, reviews, tests, do
 
 Please use [GitHub issues](https://github.com/hschne/kamal-complete/issues) to submit bugs or feature requests.
 
-## LICENSE
+## License
 
 The gem is available as open-source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
