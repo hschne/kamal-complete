@@ -35,7 +35,7 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal
 
 You can download and manage Kamal completions for ZSH using various plugin managers.
 
-#### [Zinit](https://github.com/zdharma-continuum/zinit] / [ZI](https://wiki.zshell.dev/)
+#### [Zinit](https://github.com/zdharma-continuum/zinit) / [ZI](https://wiki.zshell.dev/)
 
 ```zsh
 zi ice lucid wait as'completion' blockf has'kamal' mv'kamal.zsh -> _kamal'
