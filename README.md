@@ -25,7 +25,7 @@ echo 'source "$HOME/.local/share/bash-completion/kamal-completion.bash"' >> $HOM
 
 #### Manual
 
-Download ZSH completions as `_kamal` to some location on your `fpath`. For example:
+Download ZSH completions as `_kamal` to some location on your `$fpath`. For example:
 
 ```bash
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal-complete/refs/heads/main/completions/kamal.zsh > ~/.local/share/zsh-completion/_kamal
@@ -35,18 +35,19 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal
 
 You can download and manage Kamal completions for ZSH using various plugin managers.
 
-#### [Zinit](https://github.com/zdharma-continuum/zinit)
+#### [Zinit](https://github.com/zdharma-continuum/zinit] / [ZI](https://wiki.zshell.dev/)
 
 ```zsh
 zi ice lucid wait as'completion' blockf has'kamal' mv'kamal.zsh -> _kamal'
 zi snippet https://github.com/hschne/kamal-complete/blob/main/completions/kamal.zsh
 ```
 
-### [ZI](https://wiki.zshell.dev/)
+### Fish
 
-```zsh
-zi ice lucid wait as'completion' blockf has'kamal' mv'kamal.zsh -> _kamal'
-zi snippet https://github.com/hschne/kamal-complete/blob/main/completions/kamal.zsh
+Download the Fish completions to a location on your completion path.
+
+```bash
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/hschne/kamal-complete/refs/heads/main/completions/kamal.fish > ~/.config/fish/completions/kamal.fish
 ```
 
 ## Contributing
