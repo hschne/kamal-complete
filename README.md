@@ -2,7 +2,7 @@
 
 # Kamal Complete
 
-### Complete shell completions for Kamal ⌨️
+### Complete Shell Completions for Kamal ⌨️
 
 https://github.com/user-attachments/assets/bc746bb9-cbcb-4567-b42a-49808d889641
 
